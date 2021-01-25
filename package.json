@@ -11,10 +11,12 @@
     "test unit": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit",
     "build": "node build/build.js",
-    "test": "jest --testURL=\\\"http://localhost\\\""
+    "test": "jest",
+    "test2": "jest --testURL=\\\"http://localhost\\\""
   },
   "dependencies": {
     "@vue/test-utils": "^1.1.2",
+    "axios": "^0.21.1",
     "jest-cli": "^26.6.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
@@ -81,6 +83,8 @@
     "verbose": true,
     "testURL": "http://localhost/",
     "moduleNameMapper": {
+      "@(.*)$": "<rootDir>/src/$1",
+      "components(.*)$": "<rootDir>/src/components/$1",
       "^vue$": "vue/dist/vue.common.js"
     },
     "moduleFileExtensions": [
