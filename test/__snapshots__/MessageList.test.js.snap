@@ -12,3 +12,16 @@ exports[`MessageList.test.js has the expected html structure 1`] = `
   </li>
 </ul>
 `;
+
+exports[`MessageList.test.js имеет ожидаемую структуру html 1`] = `
+<ul>
+  <li
+    class="message"
+    style="padding-top: 10px;"
+  >
+    
+  Cat
+
+  </li>
+</ul>
+`;
